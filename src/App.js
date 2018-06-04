@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Markdown from 'react-markdown';
 import Form from './components/Form';
+import MarkdownPreviewer from './components/MarkdownPreviewer'
+
+import './App.css'
 
 class App extends Component {
   constructor(props) {
@@ -15,7 +17,7 @@ class App extends Component {
     return (
       <div>
         <Form handleChange={this.handleChange}/>
-        <Markdown source={this.state.value}/>
+        <MarkdownPreviewer value={this.state.value}/>
       </div>
     );
   }
