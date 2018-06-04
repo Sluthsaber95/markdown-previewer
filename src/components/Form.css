@@ -1,0 +1,23 @@
+@media(max-width: 480px){
+  textarea {
+    width: 90vw;
+    height: 40vh;
+    padding: 0;
+    resize: none;
+    background: #FFDF2B;
+    border: none;
+  }
+  label {
+    font-size: 20px;
+  }
+  .form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .line-decor {
+    width: 90vw;
+    height: 1px;
+    background: black;
+  }
+}

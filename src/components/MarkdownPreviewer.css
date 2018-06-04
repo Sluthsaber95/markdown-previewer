@@ -1,0 +1,20 @@
+@media(max-width: 480px){
+  .previewer-container {
+    height: 45vh;
+    width: 100vw;
+    overflow: auto;
+    margin: 2.5vh 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .preview-wrapper {
+    width: 90vw;
+  }
+  .previewer-container h1 {
+    font-size: 2em;
+  }
+  .preview-wrapper th {
+    text-align: left;
+  }
+}

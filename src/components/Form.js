@@ -1,26 +1,29 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './Form.css'
 
 class Form extends Component {
   constructor(props){
     super(props);
-    this.state = { value: ''}
+    this.state = { value: ""}
     this.handleInput = this.handleInput.bind(this);
   }
   handleInput(event){
     this.setState({ value: event.target.value})
     this.props.handleChange(event)
   }
+  componentDidMount(){
+    this.setState({ value: this.props.defaultMarkdown})
+  }
   render(){
     return (
-      <Fragment>
+      <div className="form-container">
         <form>
-          <label>
-            Name:
-            <textarea type="text" value={this.state.value} onChange={this.handleInput} />
-          </label>
+          <label>Enter markdown below :</label>
+            <div className="line-decor"></div>
+            <textarea type="text" value={this.state.value} onChange={this.handleInput.bind()}/>
         </form> 
-      </Fragment>
+      </div>
     )
   }
 }
