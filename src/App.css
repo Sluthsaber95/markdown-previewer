@@ -5,11 +5,6 @@
 .app-styles {
   background: rgba(0,126,188, 1)
 }
-@media(max-width: 480px){
-  .markdown-container {
-    margin: 60px 0 0 0;
-  }
-}
 
 /* Font Styles */
 .roboto-title-20px {

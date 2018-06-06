@@ -1,23 +1,126 @@
-@media(max-width: 480px){
+@media(min-width: 1824px){
   textarea {
-    width: 90vw;
+    width: 86vw;
     height: 40vh;
-    padding: 0;
+    padding: 0 2vw;
+    font-size: 16px;
     resize: none;
-    background: #FFDF2B;
+    background: white;
     border: none;
+    border-radius: 5px;
   }
   label {
     font-size: 20px;
   }
   .form-container {
     width: 100%;
+    height: 60vh;
     display: flex;
     justify-content: center;
   }
-  .line-decor {
-    width: 90vw;
-    height: 1px;
-    background: black;
+}
+@media(max-width: 1823px){
+  textarea {
+    width: 86vw;
+    height: 40vh;
+    padding: 0 2vw;
+    font-size: 16px;
+    resize: none;
+    background: white;
+    border: none;
+    border-radius: 5px;
+  }
+  label {
+    font-size: 20px;
+  }
+  .form-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media(max-width: 1223px){
+  textarea {
+    width: 86vw;
+    height: 40vh;
+    padding: 0 2vw;
+    font-size: 16px;
+    resize: none;
+    background: white;
+    border: none;
+    border-radius: 5px;
+  }
+  label {
+    font-size: 20px;
+  }
+  .form-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media(max-width: 1023px){
+  textarea {
+    width: 86vw;
+    height: 40vh;
+    padding: 0 2vw;
+    font-size: 14px;
+    resize: none;
+    background: white;
+    border: none;
+    border-radius: 5px;
+  }
+  label {
+    font-size: 20px;
+  }
+  .form-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media(max-width: 767px){
+  textarea {
+    width: 86vw;
+    height: 40vh;
+    padding: 0 2vw;
+    font-size: 12px;
+    resize: none;
+    background: white;
+    border: none;
+    border-radius: 5px;
+  }
+  label {
+    font-size: 20px;
+  }
+  .form-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media(max-width: 480px){
+  textarea {
+    width: 86vw;
+    height: 40vh;
+    padding: 0 2vw;
+    font-size: 12px;
+    resize: none;
+    background: white;
+    border: none;
+    border-radius: 5px;
+  }
+  label {
+    font-size: 20px;
+  }
+  .form-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
   }
 }

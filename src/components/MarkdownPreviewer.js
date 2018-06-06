@@ -6,10 +6,14 @@ import './MarkdownPreviewer.css';
 class MarkdownPreviewer extends Component {
   render() {
     return (
-      <section className="preview-container">
+      <section className="markdown-container">
+        <section className="preview-container">
         <article className="preview-wrapper">
-          <Markdown source={this.props.value} />
+          <div className="scrollbox">
+            <Markdown source={this.props.value} />
+          </div>
         </article>
+        </section>
       </section>
     );
   }

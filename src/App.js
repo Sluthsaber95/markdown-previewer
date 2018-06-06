@@ -48,13 +48,11 @@ class App extends Component {
     return (
       <section className="app-styles">
         <NavBar />
-        <section className="markdown-container">
           <MarkdownPreviewer value={this.state.value}/>
           <MarkdownInput 
             handleChange={this.handleChange} 
             defaultMarkdown={this.state.value}
           />
-        </section>
       </section>
     );
   }

@@ -19,8 +19,9 @@ class MarkdownInput extends Component {
     return (
       <div className="form-container">
         <form>
-          <label>Enter markdown below :</label>
-            <div className="line-decor"></div>
+          {
+            // null? <label>Enter markdown below :</label>
+          }
             <textarea type="text" value={this.state.value} onChange={this.handleInput}/>
         </form> 
       </div>
