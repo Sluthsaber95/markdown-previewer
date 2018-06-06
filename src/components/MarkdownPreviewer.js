@@ -6,7 +6,7 @@ import './MarkdownPreviewer.css';
 class MarkdownPreviewer extends Component {
   render() {
     return (
-      <section className="previewer-container">
+      <section className="preview-container">
         <article className="preview-wrapper">
           <Markdown source={this.props.value} />
         </article>

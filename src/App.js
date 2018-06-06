@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Form from './components/Form';
-import MarkdownPreviewer from './components/MarkdownPreviewer'
 
-import './App.css'
+import MarkdownInput from './components/MarkdownInput';
+import MarkdownPreviewer from './components/MarkdownPreviewer';
+import NavBar from './components/NavBar';
+import './App.css';
 
 const defaultMarkdown = `
 # Live demo
@@ -31,6 +32,8 @@ Check this project out [GitHub](//github.com/rexxars/react-markdown)
 
 A component by [VaffelNinja](http://vaffel.ninja) / Espen Hovlandsdal` ;
 
+
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -43,13 +46,16 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
-        <MarkdownPreviewer value={this.state.value}/>
-        <Form 
-          handleChange={this.handleChange} 
-          defaultMarkdown={this.state.value}
-        />
-      </div>
+      <section className="app-styles">
+        <NavBar />
+        <section className="markdown-container">
+          <MarkdownPreviewer value={this.state.value}/>
+          <MarkdownInput 
+            handleChange={this.handleChange} 
+            defaultMarkdown={this.state.value}
+          />
+        </section>
+      </section>
     );
   }
 }

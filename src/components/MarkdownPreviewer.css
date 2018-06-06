@@ -1,5 +1,5 @@
 @media(max-width: 480px){
-  .previewer-container {
+  .preview-container {
     height: 45vh;
     width: 100vw;
     overflow: auto;
@@ -8,11 +8,12 @@
     display: flex;
     justify-content: center;
   }
-  .preview-wrapper {
-    width: 90vw;
-  }
-  .previewer-container h1 {
+  .preview-container h1 {
     font-size: 2em;
+  }
+  .preview-wrapper {
+    height: 100vh;
+    background: white;
   }
   .preview-wrapper th {
     text-align: left;

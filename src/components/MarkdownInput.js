@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './Form.css'
+import './MarkdownInput.css'
 
-class Form extends Component {
+class MarkdownInput extends Component {
   constructor(props){
     super(props);
-    this.state = { value: ""}
+    this.state = { value: "" }
     this.handleInput = this.handleInput.bind(this);
   }
   handleInput(event){
@@ -21,14 +21,14 @@ class Form extends Component {
         <form>
           <label>Enter markdown below :</label>
             <div className="line-decor"></div>
-            <textarea type="text" value={this.state.value} onChange={this.handleInput.bind()}/>
+            <textarea type="text" value={this.state.value} onChange={this.handleInput}/>
         </form> 
       </div>
     )
   }
 }
-Form.propTypes = {
+MarkdownInput.propTypes = {
   handleChange: PropTypes.func.isRequired
 }
 
-export default Form;
+export default MarkdownInput;
